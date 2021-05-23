@@ -4,12 +4,11 @@ import linear from "./src/linear";
 import polynomial from "./src/polynomial";
 
 export function cli(argsArray: string[]) {
-    const args = minimist(argsArray.slice(2));
+    const args = minimist(argsArray.slice(2), {boolean: ['linear', 'polynomial']});
     let command = 'help';
     if (args.linear || args.l) {
         command = 'linear';
-    }
-    else if (args.polynomial || args.p) {
+    } else if (args.polynomial || args.p) {
         command = 'polynomial';
     }
 
