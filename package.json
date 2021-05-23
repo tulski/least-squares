@@ -1,0 +1,17 @@
+{
+  "name": "least-squares",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "tulski",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/minimist": "^1.2.1",
+    "@types/node": "^15.6.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "regression": "^2.0.1"
+  }
+}
